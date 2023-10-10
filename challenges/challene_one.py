@@ -2,9 +2,8 @@
 s = 3
 
 def challenge_one():
-    input_str = input("Enter a list of numbers: ").strip()
     
-    input_list = transform_input_str_to_list(input_str)
+    input_list = get_input_list()
 
     cleaned_list = clean_digits_greater_than_s(input_list)
 
@@ -12,7 +11,9 @@ def challenge_one():
 
     print(sorted_cleaned_list)
 
-def transform_input_str_to_list(input_str):
+def get_input_list():
+    input_str = input("Enter a list of numbers: ").strip()
+
     input_as_list = input_str[1:-1].split(", ")
 
     return input_as_list
