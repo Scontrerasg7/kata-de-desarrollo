@@ -10,7 +10,7 @@ def challenge_two():
 
     squares_list = [int(x)*int(x) for x in input_list if int(x)*int(x) < ss]
 
-    print( quicksort(squares_list) )
+    print(quicksort(squares_list))
 
 ################################################################################
 
