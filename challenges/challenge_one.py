@@ -15,7 +15,7 @@ def challenge_one():
 ################################################################################
 
 def clean_greaters_n_equals_digits(list_to_clean):
-    digits_to_clean = [ str(x) for x in range(1, 10) if x >= s ]
+    digits_to_clean = [str(x) for x in range(1, 10) if x >= s]
 
     cleaned_list = clean_list(list_to_clean, digits_to_clean)
 
