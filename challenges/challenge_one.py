@@ -6,7 +6,7 @@ def challenge_one():
     
     input_list = get_input_list()
 
-    cleaned_list = clean_digits_from_list(input_list)
+    cleaned_list = clean_greaters_n_equals_digits(input_list)
 
     switched_cleaned_list = switch_list(cleaned_list)
 
@@ -14,8 +14,7 @@ def challenge_one():
 
 ################################################################################
 
-def clean_digits_from_list(list_to_clean):
-    # In this case we will clean digits that are greater or equal to s
+def clean_greaters_n_equals_digits(list_to_clean):
     digits_to_clean = [ str(x) for x in range(1, 10) if x >= s ]
 
     cleaned_list = clean_list(list_to_clean, digits_to_clean)
