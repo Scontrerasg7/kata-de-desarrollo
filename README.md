@@ -1,4 +1,4 @@
-# Generating my Hash and selecting the variable "S"
+# Generating my Hash and selecting the variable "s"
 ![Variable S in the Hash](image.png)
 
-This number will be "S" in the solutions that will follow in this repository
+This number will be "s" in the solutions that will follow in this repository
