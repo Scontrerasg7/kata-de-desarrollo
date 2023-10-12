@@ -1,7 +1,7 @@
 from functions.input_list import get_input_list
 import random
 
-s = 6
+s = 3
 ss = int( str(s)*2 )
 
 def challenge_two():
