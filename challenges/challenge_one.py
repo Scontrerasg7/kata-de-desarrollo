@@ -6,7 +6,7 @@ def challenge_one():
     
     input_list = get_input_list()
 
-    cleaned_list = clean_digits_greater_than_s(input_list)
+    cleaned_list = clean_digits_from_list(input_list)
 
     switched_cleaned_list = switch_list(cleaned_list)
 
@@ -14,23 +14,19 @@ def challenge_one():
 
 ################################################################################
 
-def clean_digits_greater_than_s(input_list):
-    greaters_eqs_than_s = build_list_of_greaters_eqs_than_s()
+def clean_digits_from_list(list_to_clean):
+    # In this case we will clean digits that are greater or equal to s
+    digits_to_clean = [ str(x) for x in range(1, 10) if x >= s ]
 
-    cleaned_list = remove_digits_greater_than_s(input_list, greaters_eqs_than_s)
+    cleaned_list = clean_list(list_to_clean, digits_to_clean)
 
     return cleaned_list
 
-def build_list_of_greaters_eqs_than_s():
-    greaters_eqs_than_s = [ str(x) for x in range(1, 10) if x >= s ]
-
-    return greaters_eqs_than_s
-
-def remove_digits_greater_than_s(input_list, greaters_eqs_than_s):
+def clean_list(list_to_clean, digits_to_clean):
     cleaned_list = []
 
-    for number in input_list:
-        clenaed_number =  ''.join([dig for dig in number if dig not in greaters_eqs_than_s]) 
+    for number in list_to_clean:
+        clenaed_number =  ''.join([dig for dig in number if dig not in digits_to_clean]) 
 
         if clenaed_number != '':
             cleaned_list.append(int(clenaed_number))
