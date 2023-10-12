@@ -1,5 +1,6 @@
+from functions.input_list import get_input_list
 
-s = 6
+s = 3
 
 def challenge_one():
     
@@ -12,15 +13,6 @@ def challenge_one():
     print(switched_cleaned_list)
 
 ################################################################################
-
-def get_input_list():
-    """Removes the square brackets snd splits the string by comma and space."""
-    
-    input_str = input("Enter a list of numbers: ").strip()
-
-    input_as_list = input_str[1:-1].split(", ")
-
-    return input_as_list
 
 def clean_digits_greater_than_s(input_list):
     greaters_eqs_than_s = build_list_of_greaters_eqs_than_s()
