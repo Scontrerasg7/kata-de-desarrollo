@@ -28,9 +28,3 @@ def find_min_impossible_change(sorted_coins):
 
 if __name__ == "__main__":
     challenge_three()
-
-
-# [5, 7, 1, 1, 2, 3, 22]
-# [1, 1, 1, 1, 1]
-# [1, 5, 1, 1, 1, 10, 15, 20 ,100]
-# [1, 2, 4]

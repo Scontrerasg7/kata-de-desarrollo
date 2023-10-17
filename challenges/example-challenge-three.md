@@ -1,4 +1,5 @@
 # 💸 Understanting Challenge Three with an example
+Let's Imagine I sort all my coins in ascending order, and I start building a new set of coins taking them in my hand one-by-one
 
 ![Alt text](../images/coins_example.png)
 
