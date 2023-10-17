@@ -2,8 +2,7 @@ from functions.input_list import get_input_list
 
 S = 3
 
-def challenge_one():
-    
+def challenge_one():    
     input_list = get_input_list()
 
     cleaned_list = clean_greaters_n_equals_digits(input_list)
@@ -16,7 +15,6 @@ def challenge_one():
 
 def clean_greaters_n_equals_digits(list_to_clean):
     digits_to_clean = [str(x) for x in range(1, 10) if x >= S]
-
     cleaned_list = clean_list(list_to_clean, digits_to_clean)
 
     return cleaned_list

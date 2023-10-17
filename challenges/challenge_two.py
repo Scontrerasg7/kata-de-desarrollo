@@ -4,11 +4,10 @@ import random
 S = 3
 SS = int( str(S)*2 )
 
-def challenge_two():
-        
+def challenge_two():        
     input_list = get_input_list()
 
-    squares_list = [int(x)*int(x) for x in input_list if int(x)*int(x) < SS]
+    squares_list = [int(x)*int(x) for x in input_list if int(x)*int(x) <= SS]
 
     print(quicksort(squares_list))
 
@@ -27,7 +26,7 @@ def quicksort(list_to_sort):
 def randomize_partition(list_to_sort):
     n = len(list_to_sort)
 
-    pivot_index = random.randint(0, n - 1)
+    pivot_index = random.randint(0, n-1)
     pivot = list_to_sort[pivot_index]
 
     indexes_of_interest = [i for i in range(n) if i != pivot_index]
